@@ -3,10 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>심화탐구주제</title>
-        <h1>3학년 2반 MBTI 궁합을 알아보세요😍</h1>
+        <p style="color:black; font-size: x-large; font-family: fantasy;">3학년 2반 MBTI 궁합을 알아보세요😍</p>
         <style>
+            body{
+                background-color: rgb(255, 255, 255);
+            }
+
             .button {
-              background-color: #4CAF50; /* Green */
+              background-color: #3925eb; /* Green */
               border: none;
               color: white;
               padding: 15px 32px;
@@ -74,6 +78,7 @@
             
             //document.getElementById("result").innerText = '<나와 같은 MBTI>';
             document.write("<h2><나와 같은 유형의 친구들></h2>");
+            //document.writeln( '<p style="font-size: 20px;"><나와 같은 유형의 친구들></p>' );
             k=0;
             for(var i=0;i<31;i++){
                 if(name==a[i]){
@@ -87,8 +92,78 @@
                 }
             }
             document.write('<br><br>');
-            document.write("<h2><나와 잘 맞는 유형의 친구들></h2>");
-            document.write("<h3>천생연분</h3>");
+            document.write("<h2><나와 잘 맞지 않는 유형의 친구들></h2>");
+            k=0;
+            if(name=='infp'||name=='enfp'||name=='infj'){
+                for(var o=0;o<6;o++){
+                    for(var i=0;i<31;i++){
+                        if(ienfpj3[o]==a[i]){
+                            if(k==0)
+                                document.write("-"+a[i]+": ");
+                            
+                            k=1;
+                            document.write(b[i]+"  ");
+                        }
+                    }
+                    if(k==1){
+                        document.write('<br>');
+                        k=0;
+                    }
+                }
+            }else if(name=='isfp'){
+                for(var o=0;o<3;o++){
+                    for(var i=0;i<31;i++){
+                        if(isfp2[o]==a[i]){
+                            if(k==0)
+                                document.write("-"+a[i]+": ");
+                            
+                            k=1;
+                            document.write(b[i]+"  ");
+                        }
+                    }
+                    if(k==1){
+                        document.write('<br>');
+                        k=0;
+                    }
+                }
+            }else if(name=='esfp'||name=='istp'||name=='isfj'||name=='esfj'||name=='istj'){
+                for(var o=0;o<4;o++){
+                    for(var i=0;i<31;i++){
+                        if(iesfp2[o]==a[i]){
+                            if(k==0)
+                                document.write("-"+a[i]+": ");
+                            
+                            k=1;
+                            document.write(b[i]+"  ");
+                        }
+                    }
+                    if(k==1){
+                        document.write('<br>');
+                        k=0;
+                    }
+                }
+            }else if(name=='enfj'){
+                for(var o=0;o<4;o++){
+                    for(var i=0;i<31;i++){
+                        if(enfj3[o]==a[i]){
+                            if(k==0)
+                                document.write("-"+a[i]+": ");
+                            
+                            k=1;
+                            document.write(b[i]+"  ");
+                        }
+                    }
+                    if(k==1){
+                        document.write('<br>');
+                        k=0;
+                    }
+                }
+            }
+            
+            document.write('<br><br>');
+        document.write("<h2><나와 잘 맞는 유형의 친구들></h2>");
+            //document.write("<h3>천생연분</h3>");
+            document.writeln( '<h3 style="font-size: 20px; color:indianred">♥천생연분♥</h3>' );
             k=0;
             if(name=='infp'){
                 for(var i=0;i<31;i++){
@@ -264,7 +339,7 @@
             }
 
             document.write('<br>');
-            document.write("<h3>좋음</h3>");
+            document.writeln( '<h3 style="font-size: 20px;"><좋음></h3>' );
             k=0;
             if(name=='infp'){
                 for(var o=0;o<6;o++){
@@ -395,78 +470,9 @@
                     }
                 }
             }
-
-            document.write('<br><br>');
-            document.write("<h2><나와 잘 맞지 않는 유형의 친구들></h2>");
-            k=0;
-            if(name=='infp'||name=='enfp'||name=='infj'){
-                for(var o=0;o<6;o++){
-                    for(var i=0;i<31;i++){
-                        if(ienfpj3[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='isfp'){
-                for(var o=0;o<3;o++){
-                    for(var i=0;i<31;i++){
-                        if(isfp2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='esfp'||name=='istp'||name=='isfj'||name=='esfj'||name=='istj'){
-                for(var o=0;o<4;o++){
-                    for(var i=0;i<31;i++){
-                        if(iesfp2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='enfj'){
-                for(var o=0;o<4;o++){
-                    for(var i=0;i<31;i++){
-                        if(enfj3[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            } 
             
-        }
             
+        }   
 
         </script>
     </head>
@@ -474,8 +480,8 @@
         
         <div class="search">
             <input id='name' onchange='printName()' placeholder="mbti를 입력해주세요!">
-            <input type="button"; class="button5"; onclick="location.href='https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC'"; value="내 MBTI 알아보기" />
-            <p>결과는 재미로만 봐주세요~!</p>
+            <input type="button"; class="button"; onclick="location.href='https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC'"; value="내 MBTI 알아보기" />
+            <p style="color:black; font-size:20px">결과는 재미로만 봐주세요~!</p>
             <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
             <!--<div id='result'></div>-->
             <!--<div id='write'></div>-->
