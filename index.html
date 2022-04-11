@@ -87,408 +87,414 @@
             function printName()  {
             const name = document.getElementById('name').value;
             
-            //document.getElementById("result").innerText = '<나와 같은 MBTI>';
-            document.write("<h2><나와 같은 유형의 친구들></h2>");
-            //document.writeln( '<p style="font-size: 20px;"><나와 같은 유형의 친구들></p>' );
-            k=0;
-            for(var i=0;i<31;i++){
-                if(name==a[i]){
-                    if(k==0)
-                        document.write("-"+a[i]+": ");
-                    
-                    k=1;
-                    document.write(b[i]+"  ")
-                    //document.getElementById("write").innerText = b[i];
-            
-                }
-            }
-            document.write('<br><br>');
-            document.write("<h2><나와 잘 맞지 않는 유형의 친구들></h2>");
-            k=0;
-            if(name=='infp'||name=='enfp'||name=='infj'){
-                for(var o=0;o<6;o++){
-                    for(var i=0;i<31;i++){
-                        if(ienfpj3[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='isfp'){
-                for(var o=0;o<3;o++){
-                    for(var i=0;i<31;i++){
-                        if(isfp2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='esfp'||name=='istp'||name=='isfj'||name=='esfj'||name=='istj'){
-                for(var o=0;o<4;o++){
-                    for(var i=0;i<31;i++){
-                        if(iesfp2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='enfj'){
-                for(var o=0;o<4;o++){
-                    for(var i=0;i<31;i++){
-                        if(enfj3[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='intp'||name=='entp'||name=='intj'){
-                document.write("없음");
-            }
-            
-            document.write('<br><br>');
-        document.write("<h2><나와 잘 맞는 유형의 친구들></h2>");
-            //document.write("<h3>천생연분</h3>");
-            document.writeln( '<h3 style="font-size: 20px; color:indianred">♥천생연분♥</h3>' );
-            k=0;
-            if(name=='infp'){
+
+            if(name=='cute'){
+                document.write("<h2><우리반 친구들은 모두 CUTE😆><h2>");
                 for(var i=0;i<31;i++){
-                    if(infp1[0]==a[i]){
+                    document.write("-"+a[i]+" "+b[i]+'<br>');
+                }
+            }else{
+                //document.getElementById("result").innerText = '<나와 같은 MBTI>';
+                document.write("<h2><나와 같은 유형의 친구들></h2>");
+                //document.writeln( '<p style="font-size: 20px;"><나와 같은 유형의 친구들></p>' );
+                k=0;
+                for(var i=0;i<31;i++){
+                    if(name==a[i]){
                         if(k==0)
                             document.write("-"+a[i]+": ");
+                        
+                        k=1;
+                        document.write(b[i]+"  ")
+                        //document.getElementById("write").innerText = b[i];
+                
+                    }
+                }
+                document.write('<br><br>');
+                document.write("<h2><나와 잘 맞지 않는 유형의 친구들></h2>");
+                k=0;
+                if(name=='infp'||name=='enfp'||name=='infj'){
+                    for(var o=0;o<6;o++){
+                        for(var i=0;i<31;i++){
+                            if(ienfpj3[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
+                        }
+                    }
+                }else if(name=='isfp'){
+                    for(var o=0;o<3;o++){
+                        for(var i=0;i<31;i++){
+                            if(isfp2[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
+                        }
+                    }
+                }else if(name=='esfp'||name=='istp'||name=='isfj'||name=='esfj'||name=='istj'){
+                    for(var o=0;o<4;o++){
+                        for(var i=0;i<31;i++){
+                            if(iesfp2[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
+                        }
+                    }
+                }else if(name=='enfj'){
+                    for(var o=0;o<4;o++){
+                        for(var i=0;i<31;i++){
+                            if(enfj3[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
+                        }
+                    }
+                }else if(name=='intp'||name=='entp'||name=='intj'){
+                    document.write("없음");
+                }
+                
+                document.write('<br><br>');
+            document.write("<h2><나와 잘 맞는 유형의 친구들></h2>");
+                //document.write("<h3>천생연분</h3>");
+                document.writeln( '<h3 style="font-size: 20px; color:indianred">♥천생연분♥</h3>' );
+                k=0;
+                if(name=='infp'){
+                    for(var i=0;i<31;i++){
+                        if(infp1[0]==a[i]){
+                            if(k==0)
+                                document.write("-"+a[i]+": ");
+                                
+                            k=1;
+                            document.write(b[i]+"  ");
+                        }
+                    }
+                }else if(name=='enfp'){
+                    for(var o=0;o<2;o++){
+                        for(var i=0;i<31;i++){
+                            if(enfp1[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                    
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
+                        }
+                    }
+                }else if(name=='infj'){
+                    for(var o=0;o<2;o++){
+                        for(var i=0;i<31;i++){
+                            if(infj1[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                    
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
+                        }
+                    }
+                }else if(name=='isfp'){
+                    for(var o=0;o<2;o++){
+                        for(var i=0;i<31;i++){
+                            if(isfp1[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                    
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
+                        }
+                    }
+                }else if(name=='esfp'){
+                    for(var o=0;o<2;o++){
+                        for(var i=0;i<31;i++){
+                            if(esfp1[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                    
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
+                        }
+                    }
+                }else if(name=='istp'){
+                    for(var i=0;i<31;i++){
+                        if(istp1==a[i]){
+                            if(k==0){
+                                document.write('-'+a[i]+':');
+                            }
+                            k=1;
+                            document.write(b[i]+" ");
                             
-                        k=1;
-                        document.write(b[i]+"  ");
+                        }
                     }
-                }
-            }else if(name=='enfp'){
-                for(var o=0;o<2;o++){
+                }else if(name=='isfj'){
                     for(var i=0;i<31;i++){
-                        if(enfp1[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                                
+                        if(isfj1==a[i]){
+                            if(k==0){
+                                document.write('-'+a[i]+':');
+                            }
                             k=1;
-                            document.write(b[i]+"  ");
+                            document.write(b[i]+" ");
+                            
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
+                }else if(name=='esfj'){
+                    for(var o=0;o<2;o++){
+                        for(var i=0;i<31;i++){
+                            if(esfj1[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                    
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
+                        }
                     }
-                }
-            }else if(name=='infj'){
-                for(var o=0;o<2;o++){
+                }else if(name=='istj'){
                     for(var i=0;i<31;i++){
-                        if(infj1[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                                
+                        if(istj1==a[i]){
+                            if(k==0){
+                                document.write('-'+a[i]+':');
+                            }
                             k=1;
-                            document.write(b[i]+"  ");
+                            document.write(b[i]+" ");
+                            
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='isfp'){
-                for(var o=0;o<2;o++){
-                    for(var i=0;i<31;i++){
-                        if(isfp1[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                                
-                            k=1;
-                            document.write(b[i]+"  ");
+                }else if(name=='entp'){
+                    for(var o=0;o<2;o++){
+                        for(var i=0;i<31;i++){
+                            if(entp1[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                    
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='esfp'){
-                for(var o=0;o<2;o++){
-                    for(var i=0;i<31;i++){
-                        if(esfp1[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                                
-                            k=1;
-                            document.write(b[i]+"  ");
+                }else if(name=='intj'){
+                    for(var o=0;o<2;o++){
+                        for(var i=0;i<31;i++){
+                            if(intj1[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                    
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='istp'){
-                for(var i=0;i<31;i++){
-                    if(istp1==a[i]){
-                        if(k==0){
-                            document.write('-'+a[i]+':');
+                }else if(name=='enfj'){
+                    for(var o=0;o<2;o++){
+                        for(var i=0;i<31;i++){
+                            if(enfj1[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                    
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
                         }
-                        k=1;
-                        document.write(b[i]+" ");
-                        
-                    }
-                }
-            }else if(name=='isfj'){
-                for(var i=0;i<31;i++){
-                    if(isfj1==a[i]){
-                        if(k==0){
-                            document.write('-'+a[i]+':');
-                        }
-                        k=1;
-                        document.write(b[i]+" ");
-                        
-                    }
-                }
-            }else if(name=='esfj'){
-                for(var o=0;o<2;o++){
-                    for(var i=0;i<31;i++){
-                        if(esfj1[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                                
-                            k=1;
-                            document.write(b[i]+"  ");
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
+                }else if(name=='intp'){
+                    document.write("없음");
                 }
-            }else if(name=='istj'){
-                for(var i=0;i<31;i++){
-                    if(istj1==a[i]){
-                        if(k==0){
-                            document.write('-'+a[i]+':');
-                        }
-                        k=1;
-                        document.write(b[i]+" ");
-                        
-                    }
-                }
-            }else if(name=='entp'){
-                for(var o=0;o<2;o++){
-                    for(var i=0;i<31;i++){
-                        if(entp1[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                                
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='intj'){
-                for(var o=0;o<2;o++){
-                    for(var i=0;i<31;i++){
-                        if(intj1[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                                
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='enfj'){
-                for(var o=0;o<2;o++){
-                    for(var i=0;i<31;i++){
-                        if(enfj1[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                                
-                            k=1;
-                            document.write(b[i]+"  ");
-                        }
-                    }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='intp'){
-                document.write("없음");
-            }
 
-            document.write('<br>');
-            document.writeln( '<h3 style="font-size: 20px;">♥좋음♥</h3>' );
-            k=0;
-            if(name=='infp'){
-                for(var o=0;o<6;o++){
-                    for(var i=0;i<31;i++){
-                        if(infp2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
+                document.write('<br>');
+                document.writeln( '<h3 style="font-size: 20px;">♥좋음♥</h3>' );
+                k=0;
+                if(name=='infp'){
+                    for(var o=0;o<6;o++){
+                        for(var i=0;i<31;i++){
+                            if(infp2[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='enfp'){
-                for(var o=0;o<5;o++){
-                    for(var i=0;i<31;i++){
-                        if(enfp2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
+                }else if(name=='enfp'){
+                    for(var o=0;o<5;o++){
+                        for(var i=0;i<31;i++){
+                            if(enfp2[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='infj'){
-                for(var o=0;o<4;o++){
-                    for(var i=0;i<31;i++){
-                        if(infj2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
+                }else if(name=='infj'){
+                    for(var o=0;o<4;o++){
+                        for(var i=0;i<31;i++){
+                            if(infj2[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='isfj'||name=='esfj'||name=='istj'){
-                for(var o=0;o<3;o++){
-                    for(var i=0;i<31;i++){
-                        if(isfj2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
+                }else if(name=='isfj'||name=='esfj'||name=='istj'){
+                    for(var o=0;o<3;o++){
+                        for(var i=0;i<31;i++){
+                            if(isfj2[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='intp'){
-                for(var o=0;o<7;o++){
-                    for(var i=0;i<31;i++){
-                        if(intp1[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
+                }else if(name=='intp'){
+                    for(var o=0;o<7;o++){
+                        for(var i=0;i<31;i++){
+                            if(intp1[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='entp'){
-                for(var o=0;o<7;o++){
-                    for(var i=0;i<31;i++){
-                        if(entp2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
+                }else if(name=='entp'){
+                    for(var o=0;o<7;o++){
+                        for(var i=0;i<31;i++){
+                            if(entp2[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='intj'){
-                for(var o=0;o<5;o++){
-                    for(var i=0;i<31;i++){
-                        if(intj2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
+                }else if(name=='intj'){
+                    for(var o=0;o<5;o++){
+                        for(var i=0;i<31;i++){
+                            if(intj2[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
-                }
-            }else if(name=='enfj'){
-                for(var o=0;o<5;o++){
-                    for(var i=0;i<31;i++){
-                        if(enfj2[o]==a[i]){
-                            if(k==0)
-                                document.write("-"+a[i]+": ");
-                            
-                            k=1;
-                            document.write(b[i]+"  ");
+                }else if(name=='enfj'){
+                    for(var o=0;o<5;o++){
+                        for(var i=0;i<31;i++){
+                            if(enfj2[o]==a[i]){
+                                if(k==0)
+                                    document.write("-"+a[i]+": ");
+                                
+                                k=1;
+                                document.write(b[i]+"  ");
+                            }
+                        }
+                        if(k==1){
+                            document.write('<br>');
+                            k=0;
                         }
                     }
-                    if(k==1){
-                        document.write('<br>');
-                        k=0;
-                    }
+                }else if(name=='isfp'||name=='isfp'||name=='istp'){
+                    document.write("없음");
                 }
-            }else if(name=='isfp'||name=='isfp'||name=='istp'){
-                document.write("없음");
             }
-            
-            
         }   
 
         </script>
